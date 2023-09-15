@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Conversion</title>
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>
+            Unit Conversion
+        </h1>
+        <nav>
+            <ul class="navigate">
+                <li>
+                    <a href="#temp">Temperature</a>
+                </li>
+                <li>
+                    <a href="#weight">Weight</a>
+                </li>
+                <li>
+                    <a href="#distance">Distance</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="Temperature" id="temp">
+            <div class="thermometer">
+                <figure>
+                    <img src="./images/temp.jpg" alt="temp" height="200px" width="200px">
+                    <figcaption>Celsius to Fahrenheit Conversion</figcaption>
+                </figure>
+            </div>
+            <div class="tcontent">
+                <form action="get">
+                    <fieldset id="temperature">
+                        <legend>Temperature</legend>
+                        <p>
+                            <label for="Celcius">Celsius (<sup>o</sup>C)</label><br>
+                            <input type="number" name="Celsius" id="celcius">
+                        </p><br>
+
+                        <p><button type="button">Convert</button></p><br>
+    
+                        <input type="number" name="Fahrenheit" id="farenheit"><br>
+                        <label for="Farenheit">Fahrenheit (<sup>o</sup>f)</label>
+                    </fieldset>
+                </form>
+                <p>
+                    To convert celsius to fahrenheit yourself, use this formula replacing the 'C' with your temperature in celsius (C x 9.5) + 32.
+                </p>
+            </div>
+        </article>
+
+        <article id="weight" class="Weight">
+            <div class="scale">
+                <figure>
+                    <img src="./images/weight.png" alt="weight" height="200px" width="200px">
+                    <figcaption>Kilogram to Pound Conversion</figcaption>
+                </figure>
+            </div>
+            <div class="wcontent">
+                <form action="get">
+                    <fieldset id="weight">
+                        <legend>Weight</legend>
+                        <p>
+                            <label for="Kilogram">Kilogram (Kg)</label><br>
+                            <input type="number" name="Kilogram" id="kilogram">
+                        </p><br>
+
+                        <p><button type="button">Convert</button></p><br>
+
+                        <input type="number" name="Pounds" id="pounds"><br>
+                        <label for="Pounds">Pounds (Pd)</label>
+                    </fieldset>
+                </form>
+                <p>
+                    To convert kilogram to pounds yourself, use this formula replacing the 'Kg' with your weight in kilogram Kg x 2.205.
+                </p>
+            </div>
+        </article>
+
+        <article id="distance" class="Distance">
+            <div>
+                <figure class="tape">
+                    <img src="./images/tape.png" alt="distance" height="200px" width="200px">
+                    <figcaption>Kilometer to Miles Conversion</figcaption>
+                </figure>
+            </div>
+            <div class="tapecontent">
+                <form action="get">
+                    <fieldset id="distance">
+                        <legend>Distance</legend>
+                        <p>
+                            <label for="Kilometer">Kilometer (Km)</label><br>
+                            <input type="number" name="Kilometer" id="kilometer">
+                        </p><br>
+
+                        <p><button type="button">Convert</button></p><br>
+
+                        <input type="number" name="Miles" id="miles"><br>
+                        <label for="Miles">Miles (M)</label>
+                    </fieldset>
+                </form>
+                <p>
+                    To convert kilometer to miles yourself, use this formula replacing the 'Km' with your distance in kilometer Km x 1600.
+                </p>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <a href="#">Back to Top</a>
+        <p>
+            Unit Converter designed by Nightshade_97
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,168 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    display: grid;
+}
+
+header {
+    background-color: #3d0c68;
+    color: #ffffff;
+    padding: 10px 5px 0 ;
+    display: block;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.navigate {
+    list-style-type: none;
+    display: block;
+    text-align: right;
+}
+
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+li a {
+    text-align: right;
+    padding: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: small;
+}
+
+li a:hover {
+    color: #0000ff;
+    cursor: pointer;
+}
+
+main {
+    margin: 0 30% 0 30%;
+    max-width: 100%;
+}
+
+button {
+    color: #ffffff;
+    background: #008000;
+    border-radius: 10px;
+    padding: 2px  5px;
+}
+
+.Temperature {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    border-top: solid 10px #b63737;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.thermometer {
+    float: left;
+}
+
+.thermometer figcaption {
+    max-width: 70%;
+    text-align: center;
+    line-height: 1rem;
+}
+
+.tcontent {
+    padding: 0 10px;
+    display: grid;
+}
+
+.tcontent fieldset {
+    padding: 5px;
+}
+
+.Weight {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    border-top: solid 10px #36c436;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.scale {
+    float: left;
+}
+
+.scale figcaption {
+    max-width: 70%;
+    text-align: center;
+    line-height: 1rem;
+}
+
+.wcontent {
+    padding: 0 5px;
+    display: grid;
+}
+
+.wcontent fieldset {
+    padding: 5px;
+}
+
+
+.Distance {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    border-top: solid 10px #ffff00;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.tape {
+    float: left;
+}
+
+.tape figcaption {
+    max-width: 70%;
+    text-align: center;
+    line-height: 1rem;
+}
+
+.tapecontent {
+    padding: 0 5px;
+    display: grid;
+}
+
+.tapecontent fieldset {
+    padding: 5px;
+}
+
+
+footer {
+    display: block;
+    background-color: #3d0c68;
+    padding: 5px;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    max-width: fit-content;
+    font-size: small;
+}
+
+footer p {
+    text-align: right;
+    font-size: x-small;
+    font-style: italic;
+    color: #ffffff;
+}
