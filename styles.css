@@ -14,38 +14,43 @@ body {
 header {
     background-color: #3d0c68;
     color: #ffffff;
-    padding: 10px 5px 0 ;
-    display: block;
-    margin-bottom: 20px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .navigate {
     list-style-type: none;
-    display: block;
+    display: flex;
     text-align: right;
+    justify-content: space-around;
+    gap: 10px;
 }
 
 
 li {
     list-style: none;
-    display: inline;
 }
 
 li a {
-    text-align: right;
     padding: 5px;
     color: #ffffff;
     text-decoration: none;
-    font-size: small;
+    font-size: bolder;
+    transition: 0.4s;
 }
 
 li a:hover {
     color: #0000ff;
     cursor: pointer;
+    transform: scaleX(1.1) scaleY(1.1);
+    background-color: #faebd7;
+    border-radius: 20px;
 }
 
 main {
@@ -147,21 +152,30 @@ button {
 
 
 footer {
-    display: block;
+    display: flex;
     background-color: #3d0c68;
-    padding: 5px;
+    padding: 10px 20px;
+    justify-content: space-between;
 }
 
 footer a {
     color: #ffffff;
     text-decoration: none;
     cursor: pointer;
-    max-width: fit-content;
-    font-size: small;
+    font-size: bolder;
+    padding: 3px;
+    transition: 0.4;
+}
+
+footer a:hover {
+    color: #0000ff;
+    cursor: pointer;
+    transform: scaleX(1.1) scaleY(1.1);
+    background-color: #faebd7;
+    border-radius: 20px;
 }
 
 footer p {
-    text-align: right;
     font-size: x-small;
     font-style: italic;
     color: #ffffff;
