@@ -3,166 +3,279 @@
     margin: 0%;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 body {
     background-color: #000000;
-    display: grid;
+    width: 100%;
 }
 
 header {
     background-color: #3d0c68;
     color: #ffffff;
-    padding: 10px 5px 0 ;
-    display: block;
-    margin-bottom: 20px;
+    padding: 3vh 3vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+    border-radius: 0 0px 10px 10px;
 }
 
 h1 {
-    font-size: 20px;
+    font-size: 25px;
 }
 
+/* Navigation Bar starts here */
 .navigate {
     list-style-type: none;
-    display: block;
+    display: flex;
     text-align: right;
-}
-
-
-li {
-    list-style: none;
-    display: inline;
+    justify-content: space-around;
+    gap: 1vw;
 }
 
 li a {
-    text-align: right;
-    padding: 5px;
+    padding: 1vh 1vw;
     color: #ffffff;
     text-decoration: none;
-    font-size: small;
+    font-weight: bolder;
+    transition: .4s;
 }
 
 li a:hover {
     color: #0000ff;
     cursor: pointer;
+    background: transparent;
+    transform: scaleX(1.2) scaleY(1.2);
 }
 
+/* Main page starts here */
 main {
-    margin: 0 30% 0 30%;
-    max-width: 100%;
+    display: grid;
+    margin: auto;
+    max-width: 40%;
 }
 
+/* Styling for the button */
 button {
     color: #ffffff;
     background: #008000;
     border-radius: 10px;
     padding: 2px  5px;
+    border: transparent;
+}
+button:hover {
+    cursor: pointer;
 }
 
-.Temperature {
+img {
+    height: 200px;
+    width: 200px;
+}
+
+/* First section of the main */
+.sects1 {
     background-color: #ffffff;
-    margin-bottom: 20px;
+    margin-bottom: 3vh;
     border-top: solid 10px #b63737;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px;
-    display: inline-block;
+    display: flex;
+    width: 100%;
 }
-
-.thermometer {
-    float: left;
-}
-
-.thermometer figcaption {
-    max-width: 70%;
-    text-align: center;
-    line-height: 1rem;
+figure {
+    position: relative;
+    margin-top: 4.5vh;
 }
 
 .tcontent {
     padding: 0 10px;
-    display: grid;
+}
+
+.tcontent p {
+    margin-top: 1.5vh;
 }
 
 .tcontent fieldset {
     padding: 5px;
 }
 
-.Weight {
-    background-color: #ffffff;
-    margin-bottom: 20px;
+/* Second section of the main */
+.sects2 {
     border-top: solid 10px #36c436;
-    border-radius: 5px;
+    background-color: #ffffff;
+    margin-bottom: 3vh;
+    border-radius: 10px;
     padding: 10px;
-    display: inline-block;
-}
-
-.scale {
-    float: left;
+    display: flex;
+    width: 100%;
 }
 
 .scale figcaption {
-    max-width: 70%;
     text-align: center;
     line-height: 1rem;
 }
 
 .wcontent {
-    padding: 0 5px;
-    display: grid;
+    padding: 0 10px;
+}
+
+.wcontent p {
+    margin-top: 1.5vh;
 }
 
 .wcontent fieldset {
     padding: 5px;
 }
 
-
-.Distance {
+/* Third section of the main */
+.sects3 {
     background-color: #ffffff;
-    margin-bottom: 20px;
+    margin-bottom: 3vh;
     border-top: solid 10px #ffff00;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px;
-    display: inline-block;
-}
-
-.tape {
-    float: left;
+    display: flex;
+    width: 100%;
 }
 
 .tape figcaption {
-    max-width: 70%;
     text-align: center;
     line-height: 1rem;
 }
 
 .tapecontent {
-    padding: 0 5px;
-    display: grid;
+    padding: 0 10px;
+}
+
+.tapecontent p {
+    margin-top: 1.5vh;
 }
 
 .tapecontent fieldset {
     padding: 5px;
 }
 
-
+/* Footer starts here */
 footer {
-    display: block;
+    display: flex;
     background-color: #3d0c68;
-    padding: 5px;
-}
-
-footer a {
-    color: #ffffff;
-    text-decoration: none;
-    cursor: pointer;
-    max-width: fit-content;
-    font-size: small;
+    justify-content: center;
+    padding: 1.5vh 0;
+    border-radius: 10px 10px 0 0;
 }
 
 footer p {
-    text-align: right;
-    font-size: x-small;
+    font-size: small;
     font-style: italic;
     color: #ffffff;
+}
+footer p a {
+    font-size: 20px;
+    transition: .4s;
+}
+footer p a:hover {
+    transform: scaleX(1.2) scaleY(1.2);
+}
+
+/* Arrow Styling starts here */
+footer .arrow i{
+    border: 1px solid transparent;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 100%;
+    width: fit-content;
+    height: fit-content;
+    background-color: #7600bc;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+}
+
+/* Mediaquery Starts here */
+
+/* For screen width less than 375px */
+@media screen and (max-width:375px) {
+    h1 {
+        font-size: 15px;
+    }
+    li a {
+        font-size: 10px;
+    }
+    main {
+        max-width: 95%;
+        font-size: 12px;
+    }
+    figure {
+        margin-top: 7vh;
+    }
+    .tcontent {
+        padding: 0 5px;
+    }
+    .tcontent fieldset {
+        padding: 3px;
+    }
+    img {
+        height: 100px;
+        width: 100px;
+    }
+    .sects1 {
+        padding: 3px;
+    }
+    footer p {
+        font-size: 10px;
+    }
+    footer p a {
+        font-size: 12px;
+    }
+}
+
+/* For screen width less than 480px but greater than 375px */
+@media screen and (min-width:376px) and (max-width:480px) {
+    h1 {
+        font-size: 15px;
+    }
+    li a {
+        font-size: 10px;
+    }
+    main {
+        max-width: 95%;
+        font-size: 15px;
+    }
+    img {
+        height: 150px;
+        width: 150px;
+    }
+    .sects1 {
+        padding: 5px;
+    }
+    footer p {
+        font-size: x-small;
+    }
+}
+
+/* For screen width less than 765px but greater than 480px */
+@media screen and (min-width:481px) and (max-width:767px) {
+    h1 {
+        font-size: 20px;
+    }
+    li a {
+        font-size: 15px;
+    }
+    main {
+        max-width: 60%;
+        font-size: 15px;
+    }
+    img {
+        height: 200px;
+        width: 200px;
+    }
+    .sects1 {
+        padding: 5px;
+    }
+    footer p {
+        font-size: x-small;
+    }
 }

@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="./script.js" type="application/javascript"></script>
     <title>Unit Conversion</title>
     <link rel="stylesheet" href="./styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header>
         <h1>
@@ -14,7 +19,7 @@
         <nav>
             <ul class="navigate">
                 <li>
-                    <a href="#temp">Temperature</a>
+                    <a ref="#temp">Temperature</a>
                 </li>
                 <li>
                     <a href="#weight">Weight</a>
@@ -27,96 +32,107 @@
     </header>
 
     <main>
-        <article class="Temperature" id="temp">
+        <article class="sects1" id="temp">
             <div class="thermometer">
                 <figure>
-                    <img src="./images/temp.jpg" alt="temp" height="200px" width="200px">
-                    <figcaption>Celsius to Fahrenheit Conversion</figcaption>
+                    <img src="./images/temp.jpg" alt="temp">
                 </figure>
             </div>
             <div class="tcontent">
-                <form action="get">
+                <form id="celciusToFahrenheit">
                     <fieldset id="temperature">
                         <legend>Temperature</legend>
                         <p>
                             <label for="Celcius">Celsius (<sup>o</sup>C)</label><br>
-                            <input type="number" name="Celsius" id="celcius">
+                            <input type="number" name="Celsius" id="celcius" step="0.01">
                         </p><br>
 
-                        <p><button type="button">Convert</button></p><br>
+                        <p><button type="submit" onclick="return celcToFarh()">Convert</button></p><br>
     
-                        <input type="number" name="Fahrenheit" id="farenheit"><br>
-                        <label for="Farenheit">Fahrenheit (<sup>o</sup>f)</label>
+                        <input type="text" name="Fahrenheit" id="farenheit"><br>
+                        <label for="Farenheit">Fahrenheit (<sup>o</sup>F)</label>
                     </fieldset>
                 </form>
                 <p>
-                    To convert celsius to fahrenheit yourself, use this formula replacing the 'C' with your temperature in celsius (C x 9.5) + 32.
+                    To convert celsius to fahrenheit yourself, use this formula replacing the 'C' with your temperature in celsius: [(C x 9.5) + 32].
                 </p>
             </div>
         </article>
 
-        <article id="weight" class="Weight">
+        <article id="weight" class="sects2">
             <div class="scale">
                 <figure>
-                    <img src="./images/weight.png" alt="weight" height="200px" width="200px">
-                    <figcaption>Kilogram to Pound Conversion</figcaption>
+                    <img src="./images/weight.png" alt="weight">
                 </figure>
             </div>
             <div class="wcontent">
-                <form action="get">
+                <form id="KiloToPounds">
                     <fieldset id="weight">
                         <legend>Weight</legend>
                         <p>
                             <label for="Kilogram">Kilogram (Kg)</label><br>
-                            <input type="number" name="Kilogram" id="kilogram">
+                            <input type="number" name="Kilogram" id="kilogram" step="0.01">
                         </p><br>
 
-                        <p><button type="button">Convert</button></p><br>
+                        <p><button type="submit" onclick="return kiloToPds()">Convert</button></p><br>
 
-                        <input type="number" name="Pounds" id="pounds"><br>
-                        <label for="Pounds">Pounds (Pd)</label>
+                        <input type="text" name="Pounds" id="pounds"><br>
+                        <label for="Pounds">Pounds (lb)</label>
                     </fieldset>
                 </form>
                 <p>
-                    To convert kilogram to pounds yourself, use this formula replacing the 'Kg' with your weight in kilogram Kg x 2.205.
+                    To convert kilogram to pounds yourself, use this formula replacing the 'Kg' with your weight in kilogram: [(Kg) x 2.205].
                 </p>
             </div>
         </article>
 
-        <article id="distance" class="Distance">
+        <article id="distance" class="sects3">
             <div>
-                <figure class="tape">
-                    <img src="./images/tape.png" alt="distance" height="200px" width="200px">
-                    <figcaption>Kilometer to Miles Conversion</figcaption>
+                <figure>
+                    <img src="./images/tape.png" alt="distance">
                 </figure>
             </div>
             <div class="tapecontent">
-                <form action="get">
+                <form id="kilometerToMiles">
                     <fieldset id="distance">
                         <legend>Distance</legend>
                         <p>
                             <label for="Kilometer">Kilometer (Km)</label><br>
-                            <input type="number" name="Kilometer" id="kilometer">
+                            <input type="number" name="Kilometer" id="kilometer" step="0.01">
                         </p><br>
 
-                        <p><button type="button">Convert</button></p><br>
+                        <p><button type="submit" onclick="return kmeterToMi()">Convert</button></p><br>
 
-                        <input type="number" name="Miles" id="miles"><br>
+                        <input type="text" name="Miles" id="miles"><br>
                         <label for="Miles">Miles (M)</label>
                     </fieldset>
                 </form>
                 <p>
-                    To convert kilometer to miles yourself, use this formula replacing the 'Km' with your distance in kilometer Km x 1600.
+                    To convert kilometer to miles yourself, use this formula replacing the 'Km' with your distance in Kilometer:  [(Km) x 1600].
                 </p>
             </div>
         </article>
     </main>
 
     <footer>
-        <a href="#">Back to Top</a>
         <p>
-            Unit Converter designed by Nightshade_97
+            Unit Converter designed by Nightshade_97 &nbsp;&nbsp;
+            <a href="https://github.com/FLYNNBRIGHT" target="_blank" style="text-decoration: none; color: #fff;">
+                <i class="fa-brands fa-github"></i>
+            </a>&nbsp;&nbsp;
+            <a href="https://www.linkedin.com/in/ukpeflynn" target="_blank" style="text-decoration: none; color: #fff;">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>&nbsp;&nbsp;
+            <a href="https://twitter.com/UKPEFLYNNB?t=EFaIjPKzEsW9IaH39cbYCQ&s=09" target="_blank" style="text-decoration: none; color: #fff;">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
         </p>
+
+        <div class="arrow">
+            <a href="#">
+                <i class="fa-solid fa-arrow-up fa-bounce"></i>
+            </a>
+        </div>
     </footer>
 </body>
 </html>
