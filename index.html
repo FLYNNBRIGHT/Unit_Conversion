@@ -40,11 +40,13 @@
             </div>
             <div class="tcontent">
                 <form id="celciusToFahrenheit" method="dialog">
+                <form id="celciusToFahrenheit">
                     <fieldset id="temperature">
                         <legend>Temperature</legend>
                         <p>
                             <label for="Celcius">Celsius (<sup>o</sup>C)</label><br>
                             <input type="number" name="Celsius" id="celcius" step="0.01">
+                            <input type="text" name="Celsius" id="celcius">
                         </p><br>
 
                         <p><button type="submit" onclick="return celcToFarh()">Convert</button></p><br>
@@ -55,6 +57,11 @@
                 </form>
                 <p>
                     To convert celsius to fahrenheit yourself, use this formula replacing the 'C' with your temperature in celsius: [(C x 9.5) + 32].
+                        <label for="Farenheit">Fahrenheit (<sup>o</sup>f)</label>
+                    </fieldset>
+                </form>
+                <p>
+                    To convert celsius to fahrenheit yourself, use this formula replacing the 'C' with your temperature in: [celsius (C x 9.5) + 32].
                 </p>
             </div>
         </article>
@@ -67,11 +74,13 @@
             </div>
             <div class="wcontent">
                 <form id="KiloToPounds" method="dialog">
+                <form id="KiloToPounds">
                     <fieldset id="weight">
                         <legend>Weight</legend>
                         <p>
                             <label for="Kilogram">Kilogram (Kg)</label><br>
                             <input type="number" name="Kilogram" id="kilogram" step="0.01">
+                            <input type="text" name="Kilogram" id="kilogram">
                         </p><br>
 
                         <p><button type="submit" onclick="return kiloToPds()">Convert</button></p><br>
@@ -82,6 +91,7 @@
                 </form>
                 <p>
                     To convert kilogram to pounds yourself, use this formula replacing the 'Kg' with your weight in kilogram: [(Kg) x 2.205].
+                    To convert kilogram to pounds yourself, use this formula replacing the 'Kg' with your weight in: [kilogram (Kg) x 2.205].
                 </p>
             </div>
         </article>
@@ -94,11 +104,13 @@
             </div>
             <div class="tapecontent">
                 <form id="kilometerToMiles" method="dialog">
+                <form id="kilometerToMiles">
                     <fieldset id="distance">
                         <legend>Distance</legend>
                         <p>
                             <label for="Kilometer">Kilometer (Km)</label><br>
                             <input type="number" name="Kilometer" id="kilometer" step="0.01">
+                            <input type="text" name="Kilometer" id="kilometer">
                         </p><br>
 
                         <p><button type="submit" onclick="return kmeterToMi()">Convert</button></p><br>
